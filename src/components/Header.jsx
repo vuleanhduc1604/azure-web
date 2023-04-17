@@ -69,11 +69,14 @@ const Header = () => {
                 </div>
                 <div className="service-wrapper">
                 <NavLink className="service-anchor anchor" to="/services">Dịch vụ</NavLink>
+                {/*
                   <div className="service-dropdown">
                     <p className="service1 service">Dịch vụ 1</p>
                     <p className="service2 service">Dịch vụ 2</p>
                     <p className="service3 service">Dịch vụ 3</p>
                   </div>
+                  */
+                }
                 </div>
                 <div className="team-wrapper">
                 <NavLink className="team-anchor anchor" to="/team">Team</NavLink>

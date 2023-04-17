@@ -18,7 +18,7 @@ const Services = () => {
                 <div className="py-8">
                     <div className="w-full sm:w-1/2 px-4 mb-8 mt-4 mx-auto">
                         <h1 className="text-header text-3xl text-blue-500 mb-10">Dự án nổi bật</h1>
-                        <div className="bg-white rounded-t-3xl shadow-lg border border-gray-300">
+                        <div className="bg-white rounded-t-3xl shadow-lg border border-gray-300 hover-shadow">
                             <img srcSet={image} alt="" className="w-full" />
                             <div className="px-6">
                             <h2 className="text-2xl font-bold my-8">Website App</h2>

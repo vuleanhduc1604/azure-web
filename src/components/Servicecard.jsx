@@ -4,8 +4,8 @@ const Servicecard = () => {
     return (
       <section className="flex py-8">
         <div className="container mx-auto flex flex-wrap justify-between">
-      <div className="w-full sm:w-1/2 px-4 mb-8">
-        <div className="bg-white rounded-t-3xl shadow-lg border border-gray-300">
+      <div className="w-full sm:w-1/2 px-4 mb-8 ">
+        <div className="bg-white rounded-t-3xl shadow-lg border border-gray-300 hover-shadow">
           <img src={image} alt="" className="w-full" />
           <div className="px-6">
             <h2 className="text-2xl font-bold my-4">Box 1</h2>
@@ -14,7 +14,7 @@ const Servicecard = () => {
         </div>
       </div>                  
       <div className="w-full sm:w-1/2 px-4 mb-8">
-        <div className="bg-white rounded-t-3xl shadow-lg border border-gray-300">
+        <div className="bg-white rounded-t-3xl shadow-lg border border-gray-300 hover-shadow">
           <img src={image} alt="" className="w-full" />
           <div className="px-6">
             <h2 className="text-2xl font-bold my-4">Box 1</h2>
