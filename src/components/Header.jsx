@@ -4,6 +4,9 @@ import logoheader from '../assets/logo-header.png';
 import iconmode from '../assets/icon-mode.png'
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+
 const Header = () => {
   const activateSearch = () =>  {  
     var searchIcon = document.querySelector('.searchTab');
@@ -23,19 +26,33 @@ const Header = () => {
     xmark.classList.toggle('xmark-active');
     buttonclose.classList.toggle('btn-close-active')
   }
+  useEffect(() => {
+    window.addEventListener('scroll', isSticky);
+    return () => {
+        window.removeEventListener('scroll', isSticky);
+    };
+});
+
+       
+/* Method that will fix header after a specific scrollable */
+       const isSticky = (e) => {
+            const header = document.querySelector('.header-section');
+            const scrollTop = window.scrollY;
+            scrollTop >= 0 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
+        };
     return (
         <div>
-          <header className='header'>
+          <header className='header header-section'>
             <nav className="flex justify-between">
             <div className="burger-menu">
               <input type="checkbox" id="menu-toggle" />
               <label id="trigger" htmlFor="menu-toggle" />
               <label id="burger" htmlFor="menu-toggle" />
               <ul id="menu">
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Dịch vụ</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Về CLB</a></li>
+                <li><NavLink to="/">Trang chủ</NavLink></li>
+                <li><NavLink to="/services">Dịch vụ</NavLink></li>
+                <li><NavLink to="team">Team</NavLink></li>
+                <li><NavLink to="/aboutus">Về CLB</NavLink> </li>
               </ul>
             </div>
             <div className="header-left">
@@ -48,10 +65,10 @@ const Header = () => {
             <div className="header-right flex">
               <div className="menu-ele flex items-center">
                 <div className="home-wrapper">
-                  <button className="home-anchor anchor">Trang chủ</button>
+                  <NavLink className="home-anchor anchor" to="/">Trang chủ</NavLink>
                 </div>
                 <div className="service-wrapper">
-                  <button className="service-anchor anchor">Dịch vụ  <i className="fa-solid fa-chevron-down" /></button>
+                <NavLink className="service-anchor anchor" to="/services">Dịch vụ</NavLink>
                   <div className="service-dropdown">
                     <p className="service1 service">Dịch vụ 1</p>
                     <p className="service2 service">Dịch vụ 2</p>
@@ -59,10 +76,10 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="team-wrapper">
-                  <button className="team-anchor anchor">Team</button>
+                <NavLink className="team-anchor anchor" to="/team">Team</NavLink>
                 </div>
                 <div className="about-wrapper">
-                  <button className="about-anchor anchor">Về CLB</button>
+                <NavLink className="about-anchor anchor" to="/aboutus">Về CLB</NavLink>
                 </div>
               </div>
               <div className="search-wrapper flex items-center">
