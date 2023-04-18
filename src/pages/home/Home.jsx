@@ -3,9 +3,16 @@ import image from '../../assets/Image.png'
 import Servicecard from '../../components/Servicecard';
 import logohome from '../../assets/logo-home.png'
 import NBShort from '../../components/NBShort';
+import { Helmet } from 'react-helmet';
+const componentTitle = "Trang chủ";
+const componentDesc = "";
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>{componentTitle}</title>
+                <meta name="description" content={componentDesc} />
+            </Helmet>
             <div className="greeting pt-6 bg-blue-900 h-full py-10 flex flex-col md:py-32 md:flex-row md:items-center md:justify-center px-4 sm:px-10 md:px-32 lg:px-52">
                 <div className="md:w-1/2 mx-auto flex flex-col md:items-start">
                     <h1 className="text-4xl font-bold text-white mb-4">AzureAms Programming Club là gì?</h1>
