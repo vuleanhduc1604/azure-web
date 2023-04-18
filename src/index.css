@@ -37,3 +37,8 @@ body {
     color: #0EA5E9;
     transition-duration: .5s
 }
+@media screen and (max-width: 768px) {
+    .greeting {
+        padding-top: 150px;
+    }
+}
