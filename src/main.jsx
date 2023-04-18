@@ -8,6 +8,7 @@ import Aboutus from './pages/aboutus/Aboutus'
 import Services from './pages/services/Services'
 import Newsandblogs from './pages/newsandblogs/Newsandblogs'
 import Team from './pages/team/Team'
+import Error from './pages/error/Error'
 const routes = createRoutesFromElements(
   <Route element={<App />}>
     <Route index element={<Home />}/>
@@ -15,6 +16,7 @@ const routes = createRoutesFromElements(
     <Route path='/services' element={<Services />} />
     <Route path='/newsandblogs' element={<Newsandblogs />} />
     <Route path='/team' element={<Team />} />
+    <Route path='*' element={<Error />} />
   </Route>
 )
 
