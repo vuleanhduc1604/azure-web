@@ -4,6 +4,7 @@ import Servicecard from '../../components/Servicecard';
 import logohome from '../../assets/logo-home.png'
 import NBShort from '../../components/NBShort';
 import { Helmet } from 'react-helmet';
+import Coreteam from '../../components/Coreteam';
 const componentTitle = "Trang chủ";
 const componentDesc = "";
 const Home = () => {
@@ -36,7 +37,8 @@ const Home = () => {
                         <div className="container mx-auto px-4">
                             <h1 className="text-header text-3xl text-blue-500 mb-3">Core team</h1>
                         </div>
-                        <Servicecard /> 
+                        <Coreteam />
+                        <div className="core-team"></div>
                     </div>
                 </div>
                 <div className="py-8">

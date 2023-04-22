@@ -1,4 +1,5 @@
 import React from 'react';
+import '.././css/card.css'
 import newsimage from '.././assets/news.png'
 const NBShort = () => {
     return (

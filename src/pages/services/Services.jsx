@@ -3,6 +3,7 @@ import image from '../../assets/Image.png'
 import Servicecard from '../../components/Servicecard';
 import logogreeting from '../../assets/logo-greeting.png';
 import { Helmet } from 'react-helmet';
+import Coreteam from '../../components/Coreteam';
 const componentTitle = "Dịch vụ";
 const componentDesc = "";
 const Services = () => {
@@ -46,6 +47,7 @@ const Services = () => {
                         <div className="container mx-auto px-4">
                         <h1 className="text-header text-3xl text-blue-500 mb-3">Core team</h1>
                         </div>
+                        <Coreteam />
                     </div>  
                 </div>
             </div>

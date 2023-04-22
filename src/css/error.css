@@ -1,0 +1,31 @@
+.error-text {
+    font-family: Nunito, sans-serif;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 128px
+}
+.non-exist {
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+}
+.wrapper-404 {
+    background-color: var(--hero);
+    gap: 64px;
+    padding-left: 186px;
+    padding-right: 186px;
+    padding-top: 113px;
+    padding-bottom: 113px;
+    margin-top: 181px;
+    margin-bottom: 74px;
+    border-radius: 22px;
+}
+.logo-img {
+    width: 211px;
+    height: 245px;
+}
+.logo-wrapper-img {
+    padding-left: 48px;
+    border-left-color: var(--primary);
+    border-left-width: 16px;
+}

@@ -298,15 +298,13 @@ footer {
 .footer-right-content {
     width: 442px;
 }
-.logo-wrapper {
+.logo-wrapper, .symbol-wrapper {
     margin-right: 10px;
+    padding-top: 5px;
 }
 .fa-square-phone, .fa-envelope, .fa-square-facebook {
     font-size: 24px;
     margin-right: 22px;
-}
-.logo-wrapper {
-    padding-top: 5px;
 }
 .fa-envelope {
     padding-top: 2px;
@@ -314,7 +312,6 @@ footer {
 .separate {
     height: 200px;
 }
-
 /* Responsive */
 @media screen and (max-width: 1184px) {
     footer {

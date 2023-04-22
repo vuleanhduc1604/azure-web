@@ -3,6 +3,8 @@ import Servicecard from '../../components/Servicecard';
 import logohome from '../../assets/logo-home.png'
 import NBShort from '../../components/NBShort';
 import { Helmet } from 'react-helmet';
+import Coreteam from '../../components/Coreteam';
+import Member from '../../components/Member';
 const componentTitle = "Team";
 const componentDesc = "";
 const Team = () => {
@@ -27,6 +29,7 @@ const Team = () => {
                         <div className="container mx-auto px-4">
                         <h1 className="text-header text-3xl text-blue-500 mb-3">Core team</h1>
                         </div>
+                        <Coreteam />
                     </div>  
                 </div>
                 <div className="py-8">
@@ -34,6 +37,7 @@ const Team = () => {
                         <div className="container mx-auto px-4">
                         <h1 className="text-header text-3xl text-blue-500 mb-3">Thành viên CLB</h1>
                         </div>
+                        <Member />
                     </div>  
                 </div>
                 <div className="py-8">
