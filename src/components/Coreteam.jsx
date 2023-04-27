@@ -11,49 +11,49 @@ import Navbtn from './Navbtn';
 
 // core team 
 const cores = [{
-    avatar: './public/thanhphu.png', 
+    avatar: '/thanhphu.png', 
     name: 'Phú Thành',
     stat: 'President', 
     contact: 'Phú Thành',
     link: '#',
 }, {
-    avatar: './public/lgb.JPG', 
+    avatar: '/lgb.JPG', 
     name: 'Gia Bách', 
     stat: 'Vice President', 
     contact: 'giabach1106', 
     link: '#',
 }, {
-    avatar: './public/canh.png', 
+    avatar: '/canh.png', 
     name: 'Công Anh', 
     stat: 'Vice President', 
     contact: 'Canh Soup', 
     link: '#',
 }, {
-    avatar: './public/mdung.png', 
+    avatar: '/mdung.png', 
     name: 'Minh Dũng', 
     stat: 'Project Leader', 
     contact: 'duongdung', 
     link: '#',
 }, {
-    avatar: './public/qminh.png', 
+    avatar: '/qminh.png', 
     name: 'Quang Anh', 
     stat: 'Project Leader', 
     contact: 'nqanhhh123',
     link: '#',
 }, {
-    avatar: './public/tluong.png', 
+    avatar: '/tluong.png', 
     name: 'Thiên Lương', 
     stat: 'Head of Pr', 
     contact: 'Lương Nguyễn', 
     link: '#',
 }, {
-    avatar: './public/lebach.png', 
+    avatar: '/lebach.png', 
     name: 'Lê Bách', 
     stat: 'Head of Events', 
     contact: 'Bách Lê', 
     link: '#',
 }, {
-    avatar: './public/hphat.png', 
+    avatar: '/hphat.png', 
     name: 'Hữu Phát', 
     stat: 'Head of Med - Des', 
     contact: 'tuciphat2507', 

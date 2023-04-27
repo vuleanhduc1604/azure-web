@@ -7,19 +7,19 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import Navbtn from './Navbtn';
 
 const members = [{
-    avatar: './public/thanhphu.png', 
+    avatar: '/thanhphu.png', 
     name: 'Phú Thành',
     stat: 'President', 
     contact: 'Phú Thành',
     link: '#',
 }, {
-    avatar: './public/thanhphu.png', 
+    avatar: '/thanhphu.png', 
     name: 'Phú Thành',
     stat: 'President', 
     contact: 'Phú Thành',
     link: '#',
 }, {
-    avatar: './public/thanhphu.png', 
+    avatar: '/thanhphu.png', 
     name: 'Phú Thành',
     stat: 'President', 
     contact: 'Phú Thành',
