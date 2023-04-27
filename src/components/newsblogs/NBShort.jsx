@@ -28,9 +28,9 @@ const NBShort = () => {
                     </div>   
                 </div>
             </section>
-            <div className='flex justify-end'>
+            {/*<div className='flex justify-end'>
                 <button className='more-btn'>Xem thêm <FontAwesomeIcon icon={faArrowRight}/></button>
-            </div>
+            </div>*/}
         </div>
     );
 };
