@@ -1,12 +1,12 @@
 import React from 'react';
-import '../css/coreteam.css'
+import '../../css/coreteam.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
 import { Navigation } from 'swiper';
-import Navbtn from './Navbtn';
+import Navbtn from '../navbutton/Navbtn';
 
 
 // core team 

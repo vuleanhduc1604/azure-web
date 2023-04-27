@@ -1,6 +1,6 @@
 import React from 'react';
-import image from '../../public/Image.png'
-import '../css/card.css'
+import image from '/Image.png'
+import '../../css/card.css'
 const Servicecard = () => {
     return (
       <section className="flex py-8">

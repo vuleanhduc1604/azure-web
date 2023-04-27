@@ -1,5 +1,5 @@
 import React from 'react';
-import logofooter from '../../public/logo-footer.png'
+import logofooter from '/logo-footer.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faSquarePhone } from '@fortawesome/free-solid-svg-icons';
 

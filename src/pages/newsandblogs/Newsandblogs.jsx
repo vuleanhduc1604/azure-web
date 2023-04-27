@@ -1,7 +1,7 @@
 import React from 'react';
-import newsimage from '../../../public/news.png'
-import Servicecard from '../../components/Servicecard';
-import NBShort from '../../components/NBShort';
+import newsimage from '/news.png'
+import Servicecard from '../../components/servicecard/Servicecard';
+import NBShort from '../../components/newsblogs/NBShort';
 import { Helmet } from 'react-helmet';
 const componentTitle = "News & Blogs";
 const componentDesc = "";

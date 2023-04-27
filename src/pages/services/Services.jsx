@@ -1,9 +1,9 @@
 import React from 'react';
-import image from '../../../public/Image.png'
-import Servicecard from '../../components/Servicecard';
-import logogreeting from '../../../public/logo-greeting.png';
+import image from '/Image.png'
+import Servicecard from '../../components/servicecard/Servicecard';
+import logogreeting from '/logo-greeting.png';
 import { Helmet } from 'react-helmet';
-import Coreteam from '../../components/Coreteam';
+import Coreteam from '../../components/coreteam/Coreteam';
 const componentTitle = "Dịch vụ";
 const componentDesc = "";
 const Services = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
-import logohome from '../../../public/logo-home.png'
-import NBShort from '../../components/NBShort';
+import logohome from '/logo-home.png'
+import NBShort from '../../components/newsblogs/NBShort';
 import { Helmet } from 'react-helmet';
 const componentTitle = "Về chúng tôi";
 const componentDesc = "";

@@ -1,7 +1,7 @@
 import React from 'react';
-import "../css/header-footer.css"
-import logoheader from '../../public/logo-header.png';
-import iconmode from '../../public/icon-mode.png'
+import "../../css/header-footer.css"
+import logoheader from '/logo-header.png';
+import iconmode from '/icon-mode.png'
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';

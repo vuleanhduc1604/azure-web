@@ -1,10 +1,10 @@
 import React from 'react';
-import Servicecard from '../../components/Servicecard';
-import logohome from '../../../public/logo-home.png'
-import NBShort from '../../components/NBShort';
+import Servicecard from '../../components/servicecard/Servicecard';
+import logohome from '/logo-home.png'
+import NBShort from '../../components/newsblogs/NBShort';
 import { Helmet } from 'react-helmet';
-import Coreteam from '../../components/Coreteam';
-import Member from '../../components/Member';
+import Coreteam from '../../components/coreteam/Coreteam';
+import Member from '../../components/member/Member';
 const componentTitle = "Team";
 const componentDesc = "";
 const Team = () => {
