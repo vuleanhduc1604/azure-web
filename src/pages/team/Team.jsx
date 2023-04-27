@@ -1,6 +1,6 @@
 import React from 'react';
 import Servicecard from '../../components/Servicecard';
-import logohome from '../../assets/logo-home.png'
+import logohome from '../../../public/logo-home.png'
 import NBShort from '../../components/NBShort';
 import { Helmet } from 'react-helmet';
 import Coreteam from '../../components/Coreteam';

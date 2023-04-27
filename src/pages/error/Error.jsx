@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import logo from '../../assets/logo-error.png'
+import logo from '../../../public/logo-error.png'
 import '../../css/error.css'
 const componentTitle = "Error";
 const componentDesc = "";

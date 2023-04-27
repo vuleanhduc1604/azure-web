@@ -1,6 +1,6 @@
 import React from 'react';
 import '.././css/card.css'
-import newsimage from '.././assets/news.png'
+import newsimage from '../../public/news.png'
 const NBShort = () => {
     return (
         <div>

@@ -11,49 +11,49 @@ import Navbtn from './Navbtn';
 
 // core team 
 const cores = [{
-    avatar: 'src/assets/thanhphu.png', 
+    avatar: './public/thanhphu.png', 
     name: 'Phú Thành',
     stat: 'President', 
     contact: 'Phú Thành',
     link: '#',
 }, {
-    avatar: './src/assets/lgb.JPG', 
+    avatar: './public/lgb.JPG', 
     name: 'Gia Bách', 
     stat: 'Vice President', 
     contact: 'giabach1106', 
     link: '#',
 }, {
-    avatar: './src/assets/canh.png', 
+    avatar: './public/canh.png', 
     name: 'Công Anh', 
     stat: 'Vice President', 
     contact: 'Canh Soup', 
     link: '#',
 }, {
-    avatar: './src/assets/mdung.png', 
+    avatar: './public/mdung.png', 
     name: 'Minh Dũng', 
     stat: 'Project Leader', 
     contact: 'duongdung', 
     link: '#',
 }, {
-    avatar: './src/assets/qminh.png', 
+    avatar: './public/qminh.png', 
     name: 'Quang Anh', 
     stat: 'Project Leader', 
     contact: 'nqanhhh123',
     link: '#',
 }, {
-    avatar: './src/assets/tluong.png', 
+    avatar: './public/tluong.png', 
     name: 'Thiên Lương', 
     stat: 'Head of Pr', 
     contact: 'Lương Nguyễn', 
     link: '#',
 }, {
-    avatar: './src/assets/lebach.png', 
+    avatar: './public/lebach.png', 
     name: 'Lê Bách', 
     stat: 'Head of Events', 
     contact: 'Bách Lê', 
     link: '#',
 }, {
-    avatar: './src/assets/hphat.png', 
+    avatar: './public/hphat.png', 
     name: 'Hữu Phát', 
     stat: 'Head of Med - Des', 
     contact: 'tuciphat2507', 

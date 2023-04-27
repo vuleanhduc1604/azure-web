@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../assets/Image.png'
+import image from '../../public/Image.png'
 import '../css/card.css'
 const Servicecard = () => {
     return (

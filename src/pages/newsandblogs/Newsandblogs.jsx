@@ -1,5 +1,5 @@
 import React from 'react';
-import newsimage from '../../assets/news.png'
+import newsimage from '../../../public/news.png'
 import Servicecard from '../../components/Servicecard';
 import NBShort from '../../components/NBShort';
 import { Helmet } from 'react-helmet';

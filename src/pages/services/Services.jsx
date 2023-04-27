@@ -1,7 +1,7 @@
 import React from 'react';
-import image from '../../assets/Image.png'
+import image from '../../../public/Image.png'
 import Servicecard from '../../components/Servicecard';
-import logogreeting from '../../assets/logo-greeting.png';
+import logogreeting from '../../../public/logo-greeting.png';
 import { Helmet } from 'react-helmet';
 import Coreteam from '../../components/Coreteam';
 const componentTitle = "Dịch vụ";
