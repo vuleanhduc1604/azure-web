@@ -11,7 +11,7 @@ import Navbtn from './Navbtn';
 
 // core team 
 const cores = [{
-    avatar: './src/assets/thanhphu.png', 
+    avatar: 'src/assets/thanhphu.png', 
     name: 'Phú Thành',
     stat: 'President', 
     contact: 'Phú Thành',
