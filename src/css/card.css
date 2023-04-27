@@ -5,3 +5,16 @@
     color: var(--primary);
     transition-duration: .15s
 }
+.more-btn {
+    font-size: 1.25rem;
+    background-color: var(--primary);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+.svg-inline--fa {
+    vertical-align: -0.2em;
+}
