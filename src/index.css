@@ -33,10 +33,17 @@ body {
     border-left-color: var(--primary);
     border-left-width: 4px;
 }
-*/
+
 .bg-white {
     background-color: #ffffff;
 
+}
+
+/* Swiper Slide */
+.swiper-slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {

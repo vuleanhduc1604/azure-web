@@ -54,9 +54,9 @@
 
 .core-list, .members-list {
     display: flex;
-    flex-direction: row;
     gap: 50px;
     overflow-x: auto;
+    flex-direction: column-reverse;
 }
 
 .core-member, .member-list {

@@ -3,10 +3,11 @@ import '../css/coreteam.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import Swiper from 'swiper';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
-const $ = document.querySelector.bind(document); 
-const $$ = document.querySelectorAll.bind(document); 
+import { Navigation } from 'swiper';
+import Navbtn from './Navbtn';
+
 
 // core team 
 const cores = [{
@@ -58,28 +59,63 @@ const cores = [{
     contact: 'tuciphat2507', 
     link: '#',
 }]
-console.log(cores)
-const coreHTML = cores.map(mem => ` 
-<div class="core-member">
-    <div class="avatar">
-        <img src="${mem.avatar}" alt="${mem.name}">
-    </div>
-    <div class="card">
-        <div class="name">${mem.name}</div>
-        <div class="position">${mem.stat}</div>
-        <div class="contact-wrapper">
-            <div class="contact flex">
-                <div class="contact-logo flex">
-                    <i class="fa-brands fa-github"></i>
-                </div>
-                <div class="contact-link">
-                    <a href="${mem.link}">${mem.contact}</a>
-                </div>
-            </div>
+
+const Coreteam = () => {
+    return (
+        <div className='py-8'>
+            <Swiper 
+                className='core-list'
+                slidesPerView={3}
+                modules={[Navigation]}
+                loop={true}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    760: {
+                        slidesPerView: 2,
+                    },
+                    1100: {
+                        slidesPerView: 3,
+                    }
+                }}
+            >
+                <Navbtn/>
+                {cores.map((mem) => (
+                    <SwiperSlide>
+                        <div class="core-member">
+                            <div class="avatar">
+                                <img src={mem.avatar} alt={mem.name}/>
+                            </div>
+                            <div class="card">
+                                <div class="name">{mem.name}</div>
+                                <div class="position">{mem.stat}</div>
+                                <div class="contact-wrapper">
+                                    <div class="contact flex">
+                                        <div class="contact-logo flex">
+                                            <i class="fa-brands fa-github"></i>
+                                        </div>
+                                        <div class="contact-link">
+                                            <a href={mem.link}>{mem.contact}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
         </div>
-    </div>
-</div>
-`)
+
+    );
+};
+
+export default Coreteam;
+
+
+
+
+/* NOT WORKING
 
 const createDiv = (element) => {
     const wrapper = document.createElement('div');
@@ -114,23 +150,4 @@ const createDiv = (element) => {
     wrapper.appendChild(card);
     return wrapper
 }
-const Coreteam = () => {
-    return (
-        <div className='py-8'>
-            <div className='core-control my-8 px-10'>
-                <button class="control arrow-left">
-                    <FontAwesomeIcon icon={faArrowLeft} className='block mx-auto' />
-                </button>
-                <button class="control arrow-right">
-                    <FontAwesomeIcon icon={faArrowRight} className='block mx-auto' />
-                </button>               
-            </div>
-            <div className='swiper'>
-                {<div className='core-list swiper-wrapper' dangerouslySetInnerHTML={{__html: coreHTML}} />}
-            </div>
-        </div>
-
-    );
-};
-
-export default Coreteam;
+*/
