@@ -12,7 +12,7 @@ const Newsandblogs = () => {
                 <title>{componentTitle}</title>
                 <meta name="description" content={componentDesc} />
             </Helmet>
-            <div className="greeting pt-6 bg-blue-900 h-full py-10 flex flex-col md:py-32 md:flex-row md:items-center md:justify-center px-4 sm:px-10 md:px-32 lg:px-52">
+            <div className="greeting pt-6 bg-dark h-full py-10 flex flex-col md:py-32 md:flex-row md:items-center md:justify-center px-4 sm:px-10 md:px-32 lg:px-52">
                 <div className="md:w-1/2 mx-auto flex flex-col md:items-start">
                 <h1 className="text-4xl font-bold text-white mb-4">News and Blogs</h1>
                 <p className="text-lg text-white">Tin tức cập nhật mới nhất từ CLB</p>

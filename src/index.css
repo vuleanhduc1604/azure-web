@@ -24,9 +24,7 @@ body {
     position: sticky;
     top: 0;
 }
-.py-10 {
-    background-color: var(--hero);
-}
+
 .greeting-pg {
     margin-left: -10px;
     padding-left: 10px;
@@ -38,7 +36,9 @@ body {
     background-color: #ffffff;
 
 }
-
+.bg-dark {
+    background-color: var(--hero);
+}
 /* Swiper Slide */
 .swiper-slide {
     display: flex !important;

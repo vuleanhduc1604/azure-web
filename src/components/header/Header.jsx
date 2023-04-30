@@ -53,6 +53,7 @@ const Header = () => {
                 <li><NavLink to="/services">Dịch vụ</NavLink></li>
                 <li><NavLink to="team">Team</NavLink></li>
                 <li><NavLink to="/aboutus">Về CLB</NavLink> </li>
+                <li><NavLink to="/newsandblogs">News & Blogs</NavLink></li>
               </ul>
             </div>
             <div className="header-left">
@@ -69,14 +70,6 @@ const Header = () => {
                 </div>
                 <div className="service-wrapper">
                 <NavLink className="service-anchor anchor" to="/services">Dịch vụ</NavLink>
-                {/*
-                  <div className="service-dropdown">
-                    <p className="service1 service">Dịch vụ 1</p>
-                    <p className="service2 service">Dịch vụ 2</p>
-                    <p className="service3 service">Dịch vụ 3</p>
-                  </div>
-                  */
-                }
                 </div>
                 <div className="team-wrapper">
                 <NavLink className="team-anchor anchor" to="/team">Team</NavLink>
@@ -84,6 +77,7 @@ const Header = () => {
                 <div className="about-wrapper">
                 <NavLink className="about-anchor anchor" to="/aboutus">Về CLB</NavLink>
                 </div>
+                
               </div>
               <div className="search-wrapper flex items-center">
                 <button onClick={activateSearch} className="searchTab center button-invis" tabIndex={0} aria-label="Search" data-uia="search-box-launcher">

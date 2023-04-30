@@ -16,7 +16,7 @@ nav {
 .burger-menu {
     display: none;
 }
-.home-wrapper, .service-wrapper, .team-wrapper, .about-wrapper {
+.home-wrapper, .service-wrapper, .team-wrapper, .about-wrapper, .newsblogs-wrapper {
     padding-left: 34px;
     padding-right: 34px;
     z-index: 10;

@@ -5,7 +5,6 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
-import { Navigation } from 'swiper';
 import Navbtn from '../navbutton/Navbtn';
 
 
@@ -66,7 +65,6 @@ const Coreteam = () => {
             <Swiper 
                 className='core-list'
                 slidesPerView={3}
-                modules={[Navigation]}
                 loop={true}
                 breakpoints={{
                     0: {
