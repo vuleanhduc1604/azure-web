@@ -3,6 +3,7 @@ import newsimage from '/news.png'
 import Servicecard from '../../components/servicecard/Servicecard';
 import NBShort from '../../components/newsblogs/NBShort';
 import { Helmet } from 'react-helmet';
+import logogreeting from '/logo-greeting.png'
 const componentTitle = "News & Blogs";
 const componentDesc = "";
 const Newsandblogs = () => {
@@ -15,7 +16,7 @@ const Newsandblogs = () => {
             <div className="greeting pt-6 bg-dark h-full py-10 flex flex-col md:py-32 md:flex-row md:items-center md:justify-center px-4 sm:px-10 md:px-32 lg:px-52">
                 <div className="md:w-1/2 mx-auto flex flex-col md:items-start">
                 <h1 className="text-4xl font-bold text-white mb-4">News and Blogs</h1>
-                <p className="text-lg text-white">Tin tức cập nhật mới nhất từ CLB</p>
+                <p className="text-lg text-white greeting-pg">Tin tức cập nhật mới nhất từ CLB</p>
                 </div>
                 <div className="md:w-1/3 mx-auto mt-8 md:mt-0">
                 <img srcSet={logogreeting} alt="Image" className="w-full h-full object-cover" />

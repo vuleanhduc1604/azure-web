@@ -3,6 +3,7 @@ import '../../css/card.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import newsimage from '/news.png'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 const NBShort = () => {
     return (
         <div>    
@@ -26,6 +27,9 @@ const NBShort = () => {
                             </div>
                         </div>
                     </div>   
+                    <div className="container mx-auto flex justify-end px-4">
+                        <Link to="/newsandblogs"><button className='more-btn'>Xem thêm <FontAwesomeIcon icon={faArrowRight}/></button></Link>
+                    </div>
                 </div>
             </section>
             {/*<div className='flex justify-end'>
