@@ -1,12 +1,16 @@
 import React from 'react';
 import image from '/Image.png'
-import Servicecard from '../../components/servicecard/Servicecard';
 import logogreeting from '/logo-greeting.png';
 import { Helmet } from 'react-helmet';
 import Coreteam from '../../components/coreteam/Coreteam';
+import { useEffect } from 'react';
+import Servicesection from '../../components/servicesection/Servicesection';
 const componentTitle = "Dịch vụ";
 const componentDesc = "";
 const Services = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <Helmet>
@@ -39,7 +43,7 @@ const Services = () => {
                         <div className="container mx-auto px-4">
                         <h1 className="text-header text-3xl text-blue-500 mb-3">Các dự án</h1>
                         </div>
-                        <Servicecard />
+                        <Servicesection />
                     </div>  
                 </div>
                 <div className="py-8">

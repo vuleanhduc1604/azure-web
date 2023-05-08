@@ -1,12 +1,16 @@
 import React from 'react';
 import newsimage from '/news.png'
-import Servicecard from '../../components/servicecard/Servicecard';
+import Servicecard from '../../components/card/Card';
 import NBShort from '../../components/newsblogs/NBShort';
 import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 import logogreeting from '/logo-greeting.png'
 const componentTitle = "News & Blogs";
 const componentDesc = "";
 const Newsandblogs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <Helmet>

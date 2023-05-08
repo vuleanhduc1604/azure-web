@@ -1,12 +1,15 @@
-import React from 'react';
-import Servicecard from '../../components/servicecard/Servicecard';
+import React, { useEffect } from 'react';
 import logohome from '/logo-home.png'
 import NBShort from '../../components/newsblogs/NBShort';
 import { Helmet } from 'react-helmet';
 import Coreteam from '../../components/coreteam/Coreteam';
+import Servicesection from '../../components/servicesection/Servicesection';
 const componentTitle = "Trang chủ";
 const componentDesc = "";
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div>
             <Helmet>
@@ -28,7 +31,7 @@ const Home = () => {
                         <div className="container mx-auto px-4">
                         <h1 className="text-header text-3xl text-blue-500 mb-3">Dự án</h1>
                         </div>
-                        <Servicecard />
+                        <Servicesection />
                     </div>  
                 </div>
                 <div className="py-8">

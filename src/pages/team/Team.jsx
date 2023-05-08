@@ -1,13 +1,17 @@
 import React from 'react';
-import Servicecard from '../../components/servicecard/Servicecard';
+import Servicecard from '../../components/card/Card';
 import logohome from '/logo-home.png'
 import NBShort from '../../components/newsblogs/NBShort';
 import { Helmet } from 'react-helmet';
 import Coreteam from '../../components/coreteam/Coreteam';
 import Member from '../../components/member/Member';
+import { useEffect } from 'react';
 const componentTitle = "Team";
 const componentDesc = "";
 const Team = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <div className="">
             <Helmet>

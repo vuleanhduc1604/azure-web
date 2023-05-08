@@ -35,7 +35,7 @@ const Header = () => {
 
        
 /* Method that will fix header after a specific scrollable */
-       const isSticky = (e) => {
+       const isSticky = () => {
             const header = document.querySelector('.header-section');
             const scrollTop = window.scrollY;
             scrollTop >= 0 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');

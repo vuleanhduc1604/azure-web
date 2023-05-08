@@ -66,6 +66,9 @@ const Coreteam = () => {
                 className='core-list'
                 slidesPerView={3}
                 loop={true}
+                autoplay={{
+                    delay: 1000
+                }}
                 breakpoints={{
                     0: {
                         slidesPerView: 1,

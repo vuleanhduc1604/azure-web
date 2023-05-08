@@ -1,12 +1,27 @@
 import React from 'react';
 import '../../css/coreteam.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import Navbtn from '../navbutton/Navbtn';
 
 const members = [{
+    avatar: '/thanhphu.png', 
+    name: 'Phú Thành',
+    stat: 'President', 
+    contact: 'Phú Thành',
+    link: '#',
+}, {
+    avatar: '/thanhphu.png', 
+    name: 'Phú Thành',
+    stat: 'President', 
+    contact: 'Phú Thành',
+    link: '#',
+}, {
+    avatar: '/thanhphu.png', 
+    name: 'Phú Thành',
+    stat: 'President', 
+    contact: 'Phú Thành',
+    link: '#',
+}, {
     avatar: '/thanhphu.png', 
     name: 'Phú Thành',
     stat: 'President', 
@@ -31,6 +46,7 @@ const Member = () => {
             <Swiper
                 className='members-list'
                 slidesPerView={3}
+                autoplay={true}
                 breakpoints={{
                     0: {
                         slidesPerView: 1,
