@@ -7,6 +7,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useRef } from 'react';
 
 const Header = () => {
   const checkboxRef = useRef(null);
