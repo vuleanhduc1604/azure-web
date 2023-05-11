@@ -3,6 +3,7 @@ import "../../css/header-footer.css"
 import logoheader from '/logo-header.png';
 import iconmode from '/icon-mode.png'
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -93,6 +94,9 @@ const Header = () => {
               </div>
               <div className="mode-wrapper flex items-center">
                 <img srcSet={iconmode} alt="Icon-mode" className="icon-mode" />
+              </div>
+              <div className="bookmark-wrapper">
+                <button className="bookmark-btn"><FontAwesomeIcon icon={faBookmark} /></button>
               </div>
             </div>
           </nav>
