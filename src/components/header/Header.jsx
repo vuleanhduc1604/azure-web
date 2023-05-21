@@ -80,7 +80,7 @@ const Header = () => {
           </div>
           <div className="header-left">
             <div className="logo-wrapper-header">
-              <a href className="logo-anchor">
+              <a className="logo-anchor">
                 <img srcSet={logoheader} alt="AzureAms" className="logo" />
               </a>
             </div>
@@ -132,7 +132,7 @@ const Header = () => {
                   ></path>
                 </svg>
               </button>
-              <form action className="form-search">
+              <form className="form-search">
                 <input type="text" className="search" placeholder="Tìm kiếm" />
               </form>
               <button onClick={activateSearch} className="close-search">

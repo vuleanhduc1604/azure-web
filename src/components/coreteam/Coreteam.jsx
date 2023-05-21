@@ -1,67 +1,54 @@
 import React from 'react';
+import { Component } from 'react';
 import '../../css/coreteam.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import axios from 'axios';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
 import Navbtn from '../navbutton/Navbtn';
 
 
-// core team 
-const cores = [{
-    avatar: '/thanhphu.png', 
-    name: 'Phú Thành',
-    stat: 'President', 
-    contact: 'Phú Thành',
-    link: '#',
-}, {
-    avatar: '/lgb.JPG', 
-    name: 'Gia Bách', 
-    stat: 'Vice President', 
-    contact: 'giabach1106', 
-    link: '#',
-}, {
-    avatar: '/canh.png', 
-    name: 'Công Anh', 
-    stat: 'Vice President', 
-    contact: 'Canh Soup', 
-    link: '#',
-}, {
-    avatar: '/mdung.png', 
-    name: 'Minh Dũng', 
-    stat: 'Project Leader', 
-    contact: 'duongdung', 
-    link: '#',
-}, {
-    avatar: '/qminh.png', 
-    name: 'Quang Anh', 
-    stat: 'Project Leader', 
-    contact: 'nqanhhh123',
-    link: '#',
-}, {
-    avatar: '/tluong.png', 
-    name: 'Thiên Lương', 
-    stat: 'Head of Pr', 
-    contact: 'Lương Nguyễn', 
-    link: '#',
-}, {
-    avatar: '/lebach.png', 
-    name: 'Lê Bách', 
-    stat: 'Head of Events', 
-    contact: 'Bách Lê', 
-    link: '#',
-}, {
-    avatar: '/hphat.png', 
-    name: 'Hữu Phát', 
-    stat: 'Head of Med - Des', 
-    contact: 'tuciphat2507', 
-    link: '#',
-}]
-
-const Coreteam = () => {
-    return (
-        <div className='py-8'>
+export default class Coreteam extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {cores: []};
+    }
+    componentDidMount() {
+        axios.get('http://localhost:5000/cores')
+            .then(res => {
+                this.setState({cores: res.data})
+            })
+            .catch(err => console.log(err))
+    }
+    coresList() {
+        return this.state.cores.map(currentcores => {
+            return (
+                <SwiperSlide>
+                        <div className="core-member" key={currentcores._id}>
+                            <div className="avatar">
+                                <img src={currentcores.avatar} alt={currentcores.name}/>
+                            </div>
+                            <div className="card">
+                                <div className="name">{currentcores.name}</div>
+                                <div className="position">{currentcores.stat}</div>
+                                <div className="contact-wrapper">
+                                    <div className="contact flex">
+                                        <div className="contact-logo flex">
+                                            <i className="fa-brands fa-github"></i>
+                                        </div>
+                                        <div className="contact-link">
+                                            <a href={currentcores.link}>{currentcores.contact}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+            )
+        })
+    }
+    render() {
+        return (
+            <div className='py-8'>
             <Swiper 
                 className='core-list'
                 slidesPerView={3}
@@ -82,36 +69,14 @@ const Coreteam = () => {
                 }}
             >
                 <Navbtn/>
-                {cores.map((mem) => (
-                    <SwiperSlide>
-                        <div class="core-member">
-                            <div class="avatar">
-                                <img src={mem.avatar} alt={mem.name}/>
-                            </div>
-                            <div class="card">
-                                <div class="name">{mem.name}</div>
-                                <div class="position">{mem.stat}</div>
-                                <div class="contact-wrapper">
-                                    <div class="contact flex">
-                                        <div class="contact-logo flex">
-                                            <i class="fa-brands fa-github"></i>
-                                        </div>
-                                        <div class="contact-link">
-                                            <a href={mem.link}>{mem.contact}</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                ))}
+                {this.coresList().map(currentcorerender => {
+                    return currentcorerender
+                })}
             </Swiper>
         </div>
-
-    );
-};
-
-export default Coreteam;
+        )
+    }
+}
 
 
 

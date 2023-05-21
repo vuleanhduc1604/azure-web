@@ -1,12 +1,12 @@
 import React from 'react';
 import logohome from '/logo-home.png'
-import NBShort from '../../components/newsblogs/NBShort';
 import '../../css/card.css'
 import { Helmet } from 'react-helmet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import Servicesection from '../../components/servicesection/Servicesection';
 const componentTitle = "Về chúng tôi";
 const componentDesc = "";
 const Aboutus = () => {
@@ -64,7 +64,7 @@ const Aboutus = () => {
                         <div className="container mx-auto px-4">
                         <h1 className="text-header text-3xl text-blue-500 mb-3">News & Blogs</h1>
                         </div>
-                        <NBShort />
+                        <Servicesection />
                     </div>  
                 </div>
             </div>

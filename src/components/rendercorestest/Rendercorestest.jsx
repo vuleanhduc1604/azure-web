@@ -1,42 +1,38 @@
-import React from 'react';
-import { Component } from 'react';
-import '../../css/coreteam.css'
+import React, { useEffect, useState, Component } from 'react';
 import axios from 'axios';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
 import Navbtn from '../navbutton/Navbtn';
-
-
-export default class Member extends Component {
+export default class Coreteam extends Component {
     constructor(props) {
         super(props)
-        this.state = {members: []};
+        this.state = {cores: []};
     }
     componentDidMount() {
-        axios.get('http://localhost:5000/members')
+        axios.get('http://localhost:5000/cores')
             .then(res => {
-                this.setState({members: res.data})
+                this.setState({cores: res.data})
             })
             .catch(err => console.log(err))
     }
-    membersList() {
-        return this.state.members.map(currentmembers => {
+    coresList() {
+        return this.state.cores.map(currentcores => {
             return (
                 <SwiperSlide>
-                        <div className="core-member" key={currentmembers._id}>
+                        <div className="core-member" key={currentcores._id}>
                             <div className="avatar">
-                                <img src={currentmembers.avatar} alt={currentmembers.name}/>
+                                <img src={currentcores.avatar} alt={currentcores.name}/>
                             </div>
                             <div className="card">
-                                <div className="name">{currentmembers.name}</div>
-                                <div className="position">{currentmembers.stat}</div>
+                                <div className="name">{currentcores.name}</div>
+                                <div className="position">{currentcores.stat}</div>
                                 <div className="contact-wrapper">
                                     <div className="contact flex">
                                         <div className="contact-logo flex">
                                             <i className="fa-brands fa-github"></i>
                                         </div>
                                         <div className="contact-link">
-                                            <a href={currentmembers.link}>{currentmembers.contact}</a>
+                                            <a href={currentcores.link}>{currentcores.contact}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -50,8 +46,9 @@ export default class Member extends Component {
         return (
             <div className='py-8'>
             <Swiper 
-                className='members-list'
+                className='core-list'
                 slidesPerView={3}
+                loop={true}
                 autoplay={{
                     delay: 1000
                 }}
@@ -68,7 +65,7 @@ export default class Member extends Component {
                 }}
             >
                 <Navbtn/>
-                {this.membersList().map(currentcorerender => {
+                {this.coresList().map(currentcorerender => {
                     return currentcorerender
                 })}
             </Swiper>

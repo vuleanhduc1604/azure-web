@@ -1,10 +1,10 @@
 import React from 'react';
 import newsimage from '/news.png'
 import Servicecard from '../../components/card/Card';
-import NBShort from '../../components/newsblogs/NBShort';
 import { Helmet } from 'react-helmet';
 import { useEffect } from 'react';
 import logogreeting from '/logo-greeting.png'
+import Servicesection from '../../components/servicesection/Servicesection';
 const componentTitle = "News & Blogs";
 const componentDesc = "";
 const Newsandblogs = () => {
@@ -48,7 +48,7 @@ const Newsandblogs = () => {
                         <div className="container mx-auto px-4">
                         <h1 className="text-header text-3xl text-blue-500 mb-3">News & Blogs</h1>
                         </div>
-                        <NBShort />
+                        <Servicesection />
                     </div>  
                 </div>
             </div>

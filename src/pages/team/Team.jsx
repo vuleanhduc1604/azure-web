@@ -1,11 +1,11 @@
 import React from 'react';
 import Servicecard from '../../components/card/Card';
 import logohome from '/logo-home.png'
-import NBShort from '../../components/newsblogs/NBShort';
 import { Helmet } from 'react-helmet';
 import Coreteam from '../../components/coreteam/Coreteam';
 import Member from '../../components/member/Member';
 import { useEffect } from 'react';
+import Servicesection from '../../components/servicesection/Servicesection';
 const componentTitle = "Team";
 const componentDesc = "";
 const Team = () => {
@@ -49,7 +49,7 @@ const Team = () => {
                         <div className="container mx-auto px-4">
                             <h1 className="text-header text-3xl text-blue-500 mb-3">News và Blogs</h1>
                         </div>
-                        <NBShort />
+                        <Servicesection />
                     </div>  
                 </div>
             </div>

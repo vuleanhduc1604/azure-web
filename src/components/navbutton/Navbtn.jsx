@@ -8,10 +8,10 @@ const Navbtn = () => {
 
     return (
         <div className='core-control my-8 px-10'>
-                <button class="control arrow-left" onClick={() => swiper.slidePrev()}>
+                <button className="control arrow-left" onClick={() => swiper.slidePrev()}>
                     <FontAwesomeIcon icon={faArrowLeft} className='block mx-auto'/>
                 </button>
-                <button class="control arrow-right" onClick={() => swiper.slideNext()}>
+                <button className="control arrow-right" onClick={() => swiper.slideNext()}>
                     <FontAwesomeIcon icon={faArrowRight} className='block mx-auto'/>
                 </button>               
             </div>

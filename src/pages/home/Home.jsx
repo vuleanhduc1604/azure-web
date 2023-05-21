@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import logohome from '/logo-home.png'
-import NBShort from '../../components/newsblogs/NBShort';
 import { Helmet } from 'react-helmet';
 import Coreteam from '../../components/coreteam/Coreteam';
 import Servicesection from '../../components/servicesection/Servicesection';
@@ -48,7 +47,7 @@ const Home = () => {
                         <div className="container mx-auto px-4">
                             <h1 className="text-header text-3xl text-blue-500 mb-3">News và Blogs</h1>
                         </div>
-                        <NBShort />
+                        <Servicesection />
                     </div>  
                 </div>
             </div>
