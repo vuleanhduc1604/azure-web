@@ -22,7 +22,7 @@ export default class Member extends Component {
     membersList() {
         return this.state.members.map(currentmembers => {
             return (
-                <SwiperSlide>
+                    <SwiperSlide key={currentmembers._id}>
                         <div className="core-member" key={currentmembers._id}>
                             <div className="avatar">
                                 <img src={currentmembers.avatar} alt={currentmembers.name}/>
@@ -33,7 +33,7 @@ export default class Member extends Component {
                                 <div className="contact-wrapper">
                                     <div className="contact flex">
                                         <div className="contact-logo flex">
-                                            <i className="fa-brands fa-github"></i>
+                                            <i class="fa-brands fa-facebook"></i>
                                         </div>
                                         <div className="contact-link">
                                             <a href={currentmembers.link}>{currentmembers.contact}</a>

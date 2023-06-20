@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="footer-left-content">
               <p className="footer-left-p">(+84) 975 277 277</p>
               <p className="footer-left-p">azureamsprogrammingclub@gmail.com</p>
-              <p className="footer-left-p">https://facebook.com/azureamsprogramming</p>
+              <a className='no-ani' href="https://facebook.com/azureamsprogramming"><p className="footer-left-p">AzureAms Programming Club</p></a>
             </div>
           </div>
         </div>

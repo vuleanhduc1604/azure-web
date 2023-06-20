@@ -30,7 +30,7 @@ const Newsandblogs = () => {
                 <div className="py-8">
                     <div className="w-full px-4 mb-8 mx-auto">
                         <div className="container mx-auto px-4">
-                            <h1 className="text-header text-3xl text-blue-500 mb-3">Mới nhất</h1>
+                            <h1 className="text-header text-3xl text-blue-500 mb-3 text-center">Mới nhất</h1>                         
                             <div className="px-4 mb-8 flex">
                                 <div className="bg-white rounded-t-3xl shadow-lg border border-gray-300 mx-auto hover-shadow">
                                     <img src={newsimage} alt="" className="w-full" />

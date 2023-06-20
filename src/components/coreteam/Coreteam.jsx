@@ -3,6 +3,7 @@ import { Component } from 'react';
 import '../../css/coreteam.css'
 import axios from 'axios';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
+import { Autoplay, Navigation, Pagination } from 'swiper';
 import 'swiper/css'
 import Navbtn from '../navbutton/Navbtn';
 
@@ -22,7 +23,7 @@ export default class Coreteam extends Component {
     coresList() {
         return this.state.cores.map(currentcores => {
             return (
-                <SwiperSlide>
+                <SwiperSlide key={currentcores._id}>
                         <div className="core-member" key={currentcores._id}>
                             <div className="avatar">
                                 <img src={currentcores.avatar} alt={currentcores.name}/>
@@ -33,7 +34,7 @@ export default class Coreteam extends Component {
                                 <div className="contact-wrapper">
                                     <div className="contact flex">
                                         <div className="contact-logo flex">
-                                            <i className="fa-brands fa-github"></i>
+                                        <i class="fa-brands fa-facebook"></i>
                                         </div>
                                         <div className="contact-link">
                                             <a href={currentcores.link}>{currentcores.contact}</a>
@@ -54,7 +55,8 @@ export default class Coreteam extends Component {
                 slidesPerView={3}
                 loop={true}
                 autoplay={{
-                    delay: 1000
+                    delay: 2500,
+                    disableOnInteraction: false
                 }}
                 breakpoints={{
                     0: {
