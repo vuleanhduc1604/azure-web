@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Component } from 'react';
 import '../../css/coreteam.css'
 import axios from 'axios';
@@ -6,6 +6,25 @@ import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import 'swiper/css'
 import Navbtn from '../navbutton/Navbtn';
+/*
+const Coreteam = () => {
+    const [cores, setCores] = useState([]);
+    useEffect(() => {
+        axios.get('https://localhost:5000/cores')
+            .then(res => {
+                setCores(res.data)
+            })
+            .catch(err => console.log(err))
+    })
+    return (
+        <div>
+            core
+        </div>
+    );
+};
+*/
+
+
 
 
 export default class Coreteam extends Component {
@@ -69,6 +88,7 @@ export default class Coreteam extends Component {
                         slidesPerView: 3,
                     }
                 }}
+                modules={Autoplay}
             >
                 <Navbtn/>
                 {this.coresList().map(currentcorerender => {
@@ -79,6 +99,7 @@ export default class Coreteam extends Component {
         )
     }
 }
+
 
 
 
